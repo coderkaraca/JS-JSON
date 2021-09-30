@@ -1,2 +1,2 @@
-# Raspberry-Pi-Grafik-i-lem-belle-i
+# Raspberry-Pi-Grafik islem bellek miktarini ayarlamak
 Grafik işlem bellek  miktarını ayarlamak
