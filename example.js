@@ -19,9 +19,9 @@
             istek.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
 
-                    var jsondegerleri = JSON.parse(this.responseText); // JSON gelen veriyi okumamız için komutunu yazmalıyız. Bu satırda verileri 'jsondegerleri' adlı değişkene tanımladık.
+                    var jsondegerleri = JSON.parse(this.responseText); // JSON gelen veriyi okumamız için parse komutunu yazmalıyız. Bu satırda verileri 'jsondegerleri' adlı değişkene tanımladık.
                     var metinsonucu = ""; // Genel içeriği yazdırmak için değeri boş bir değişken oluşturuyoruz.
-                    var setdegerleri = jsondegerleri.setler; // Yeni değişken oluşturduk. Veriler artık 'jsondegerleri' değişkeninde olduğu için JSON içinde ki anahtarları çağırabiliriz.
+                    var setdegerleri = jsondegerleri.setler; // Yeni değişken oluşturduk. Veriler artık 'jsondegerleri' değişkeninde olduğu için example.json içinde ki anahtarları çağırabiliriz.
                     var setdegerleriuzunlugu = setdegerleri.length; // Set değerlerinin uzunluğunu alıyoruz.
 
                     for (var baslangic = 0; baslangic < setdegerleriuzunlugu; baslangic++) {
