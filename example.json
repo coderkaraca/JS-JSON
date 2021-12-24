@@ -1,0 +1,29 @@
+{
+    "setler": [
+        {
+            "icerik": "Javascript Eğitim Seti",
+            "egitmen": "Gökhan",
+            "fiyat": "200,00 TL"
+        },
+        {
+            "icerik": "HTML Eğitim Seti",
+            "egitmen": "Fatih",
+            "fiyat": "100,00 TL"
+        },
+        {
+            "icerik": "CSS Eğitim Seti",
+            "egitmen": "Ferhat",
+            "fiyat": "150,00 TL"
+        },
+        {
+            "icerik": "Python Eğitim Seti",
+            "egitmen": "Bülent",
+            "fiyat": "300,00 TL"
+        },
+        {
+            "icerik": "MySql Eğitim Seti",
+            "egitmen": "Ertuğrul",
+            "fiyat": "250,00 TL"
+        }
+    ]
+}
