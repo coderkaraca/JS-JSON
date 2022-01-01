@@ -32,7 +32,7 @@
                     document.getElementById("sonuc").innerHTML = "Hata oluştu"
                 }
             };
-            istek.open("GET", "index.json", true);
+            istek.open("GET", "example.json", true);
             istek.send();
         }
     </script>
