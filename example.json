@@ -3,27 +3,32 @@
         {
             "icerik": "Javascript Eğitim Seti",
             "egitmen": "Yazarbir",
-            "fiyat": "200,00 TL"
+            "fiyat": "200,00 TL",
+            "yil": "2020"
         },
         {
             "icerik": "HTML Eğitim Seti",
             "egitmen": "Yazariki",
-            "fiyat": "100,00 TL"
+            "fiyat": "100,00 TL",
+            "yil": "2017"
         },
         {
             "icerik": "CSS Eğitim Seti",
-            "egitmen": "Yazarüç    ",
-            "fiyat": "150,00 TL"
+            "egitmen": "Yazarüç",
+            "fiyat": "150,00 TL",
+            "yil": "2019"
         },
         {
             "icerik": "Python Eğitim Seti",
             "egitmen": "Yazardört",
-            "fiyat": "300,00 TL"
+            "fiyat": "300,00 TL",
+            "yil": "2021"
         },
         {
             "icerik": "MySql Eğitim Seti",
             "egitmen": "Yazarbeş",
-            "fiyat": "250,00 TL"
+            "fiyat": "250,00 TL",
+            "yil": "2018"
         }
     ]
 }
