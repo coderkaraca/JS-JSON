@@ -1,41 +1,46 @@
+$(document).ready(function () {
+  let setler = [
+    {
+      icerik: "Javascript Eğitim Seti",
+      egitmen: "Yazarbir",
+      fiyat: "200,00 TL",
+      yil: "2020",
+    },
+    {
+      icerik: "HTML Eğitim Seti",
+      egitmen: "Yazariki",
+      fiyat: "100,00 TL",
+      yil: "2017",
+    },
+    {
+      icerik: "CSS Eğitim Seti",
+      egitmen: "Yazarüç",
+      fiyat: "150,00 TL",
+      yil: "2019",
+    },
+    {
+      icerik: "Python Eğitim Seti",
+      egitmen: "Yazardört",
+      fiyat: "300,00 TL",
+      yil: "2021",
+    },
+    {
+      icerik: "MySql Eğitim Seti",
+      egitmen: "Yazarbeş",
+      fiyat: "250,00 TL",
+      yil: "2018",
+    },
+  ];
+  let jsonVeri = JSON.stringify(setler); // String yapısı.
+  let veri = JSON.parse(jsonVeri); // JSON veri yapısı.
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
-    <meta name="author" content="Gökhan Karaca">
-    <meta name="viewport" content="width=width-device, initial-scale=1.0">
-    <title>Javascript</title>
-</head>
-
-<body>
-    <h3>JSON / EXAMPLE</h3>
-    <button onclick="ornek()">Açıklama Butonu</button> <br><br>
-    <div id="sonuc">Eğitimler ile ilgili açıklamayı okumak için lütfen butona basınız</div>
-    <script>
-        function ornek() {
-            var istek = new XMLHttpRequest();
-            istek.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-
-                    var jsondegerleri = JSON.parse(this.responseText); // JSON gelen veriyi okumamız için parse komutunu yazmalıyız. Bu satırda verileri 'jsondegerleri' adlı değişkene tanımladık.
-                    var metinsonucu = ""; // Genel içeriği yazdırmak için değeri boş bir değişken oluşturuyoruz.
-                    var setdegerleri = jsondegerleri.setler; // Yeni değişken oluşturduk. Veriler artık 'jsondegerleri' değişkeninde olduğu için example.json içinde ki anahtarları çağırabiliriz.
-                    var setdegerleriuzunlugu = setdegerleri.length; // Set değerlerinin uzunluğunu alıyoruz.
-
-                    for (var baslangic = 0; baslangic < setdegerleriuzunlugu; baslangic++) {
-                        metinsonucu += "Eğitim Set Adı :" + setdegerleri[baslangic].icerik + "<br>Eğitmen Adı :" + setdegerleri[baslangic].egitmen + "<br>Eğitim Fiyatı :" + setdegerleri[baslangic].fiyat + "<br>";
-                    }
-                    document.getElementById("sonuc").innerHTML = metinsonucu;
-                } else {
-                    document.getElementById("sonuc").innerHTML = "Hata oluştu"
-                }
-            };
-            istek.open("GET", "example.json", true);
-            istek.send();
-        }
-    </script>
-</body>
-
-</html>
+  for (let egitim = 0; egitim < veri.length; egitim++) {
+    let tablo = "<tr>";
+    tablo += "<td>" + veri[egitim].icerik + "</td>";
+    tablo += "<td>" + veri[egitim].egitmen + "</td>";
+    tablo += "<td>" + veri[egitim].fiyat + "</td>";
+    tablo += "<td>" + veri[egitim].yil + "</td>";
+    tablo += "</tr>";
+    $("#setTablo").append(tablo);
+  }
+});
