@@ -1,2 +1,2 @@
 # Javascript - JSON
-JSON veya 'JavaScript Object Notation', verileri yapılandırmak ve taşımak için minimum okunabilir bir formattır.
+JSON, JavaScript nesne gösterim biçiminde yazılmış metinlerden oluşan bir veri formatıdır. Web sitelerinde veri alışverişi yapmak için kullanılır. Dize, sayı, mantıksal değer, boş, nesne ve dizi gibi veri türlerini içerir.
